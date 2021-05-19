@@ -1,0 +1,46 @@
+uuid: 8493368c-b539-42fa-9285-f16e4a538408
+langcode: en
+status: true
+dependencies:
+  module:
+    - request_data_conditions
+    - views_exposed_filter_blocks
+  theme:
+    - fsu_subtheme
+id: fsu_subtheme_viewsexposedfilterblock
+theme: fsu_subtheme
+region: sidr
+weight: 0
+provider: null
+plugin: views_exposed_filter_blocks_block
+settings:
+  id: views_exposed_filter_blocks_block
+  label: 'Views exposed filter block'
+  provider: views_exposed_filter_blocks
+  label_display: '0'
+  view_display: 'solr_search_content:block_3'
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

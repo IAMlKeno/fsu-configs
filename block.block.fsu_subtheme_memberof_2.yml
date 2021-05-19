@@ -1,0 +1,25 @@
+uuid: f1cb3793-eb57-453f-b87c-56378eabfc48
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.member_of
+    - blockgroup.block_group_content.search_facet_header
+  module:
+    - facets
+    - blockgroup
+  theme:
+    - fsu_subtheme
+id: fsu_subtheme_memberof_2
+theme: fsu_subtheme
+region: search_facet_header
+weight: -13
+provider: null
+plugin: 'facet_block:member_of'
+settings:
+  id: 'facet_block:member_of'
+  label: 'Member of'
+  provider: facets
+  label_display: '0'
+  block_id: memberof_2
+visibility: {  }

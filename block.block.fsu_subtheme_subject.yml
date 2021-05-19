@@ -1,0 +1,50 @@
+uuid: 4bdda14f-6786-4ca6-9b29-470b04e2f53d
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.subject_grid
+    - blockgroup.block_group_content.search_facet_header
+  module:
+    - facets
+    - request_data_conditions
+    - blockgroup
+  theme:
+    - fsu_subtheme
+id: fsu_subtheme_subject
+theme: fsu_subtheme
+region: search_facet_header
+weight: 0
+provider: null
+plugin: 'facet_block:subject_grid'
+settings:
+  id: 'facet_block:subject_grid'
+  label: Subject
+  provider: facets
+  label_display: visible
+  block_id: subject
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

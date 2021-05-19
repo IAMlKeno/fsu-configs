@@ -1,0 +1,32 @@
+schemas:
+  bootstrap: 8000
+  dgi_i8_base: 8000
+  fsu_subtheme: 8000
+favicon:
+  mimetype: image/png
+  path: themes/contrib/dgi_i8_base/DG+Coaster+Blue.png
+  url: 'http://discoverygarden-vsphere-fsu.dgi/themes/contrib/fsu_subtheme/favicon.ico'
+  use_default: 1
+features:
+  comment_user_picture: 1
+  comment_user_verification: 1
+  favicon: 1
+  node_user_picture: 1
+logo:
+  path: themes/contrib/fsu_subtheme/logo.png
+  url: ''
+  use_default: 0
+use_different_front_header_logo: 1
+front_header_logo_path: themes/contrib/fsu_subtheme/logo/FSU_taglinelockup_stacked_4C_inverse2.png
+use_different_mobile_header_logo: 0
+mobile_header_logo_path: null
+front_page_bg_image_opacity: '100'
+front_page_bg_gradient_end: '44'
+front_page_bg_gradient_start: '72'
+front_page_gradient_deg: '140'
+header_logo_width: '155'
+use_different_mobile_logo_widths: 1
+header_logo_mobile_width: '125'
+header_logo_front_mobile_width: '125'
+reset_http_request_cache: ''
+table: ''

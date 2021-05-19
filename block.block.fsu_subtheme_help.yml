@@ -1,0 +1,22 @@
+uuid: 92d48278-9e35-4f48-a2e8-ec624d1cf3dd
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - fsu_subtheme
+_core:
+  default_config_hash: xTpv6QsjA2YbIEClmPZAolMQv3R26s722mict6wVh_c
+id: fsu_subtheme_help
+theme: fsu_subtheme
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

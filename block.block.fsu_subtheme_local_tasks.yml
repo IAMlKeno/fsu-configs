@@ -1,0 +1,38 @@
+uuid: 498f00b1-cdd8-46b7-8ff2-ff4c22c53c5b
+langcode: en
+status: true
+dependencies:
+  module:
+    - content_sync_helper
+    - islandora
+  theme:
+    - fsu_subtheme
+_core:
+  default_config_hash: X9fkY4VmNAGjdUvl6vSnQk9UhiuQWoYf1c3pHBjW9Do
+id: fsu_subtheme_local_tasks
+theme: fsu_subtheme
+region: content
+weight: -31
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility:
+  content_sync_helper_media_parent_node_has_type:
+    id: content_sync_helper_media_parent_node_has_type
+    bundles:
+      islandora_object: islandora_object
+    negate: true
+    context_mapping:
+      media: '@islandora.media_route_context_provider:media'
+  islandora_entity_bundle:
+    id: islandora_entity_bundle
+    bundles:
+      islandora_object: islandora_object
+    negate: true
+    context_mapping: {  }

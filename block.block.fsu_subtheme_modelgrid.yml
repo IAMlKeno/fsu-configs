@@ -1,0 +1,25 @@
+uuid: 8080b5ff-8d22-4f46-9bc0-f8a216528125
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.model_grid_
+    - blockgroup.block_group_content.search_facet_header
+  module:
+    - facets
+    - blockgroup
+  theme:
+    - fsu_subtheme
+id: fsu_subtheme_modelgrid
+theme: fsu_subtheme
+region: search_facet_header
+weight: -9
+provider: null
+plugin: 'facet_block:model_grid_'
+settings:
+  id: 'facet_block:model_grid_'
+  label: Model
+  provider: facets
+  label_display: '0'
+  block_id: modelgrid
+visibility: {  }

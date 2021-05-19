@@ -1,0 +1,20 @@
+uuid: 42dcd64f-9546-4a3a-9454-84e630c02106
+langcode: en
+status: true
+dependencies:
+  theme:
+    - fsu_subtheme
+_core:
+  default_config_hash: oeLK5DXGmDK6LdoP6yTObOeInEmp2QhAcC-S3iOozBE
+id: fsu_subtheme_local_actions
+theme: fsu_subtheme
+region: content
+weight: -29
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

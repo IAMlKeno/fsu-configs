@@ -1,0 +1,50 @@
+uuid: 72742bbb-232b-4240-b672-6b0c7642a812
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.genre_grid
+    - blockgroup.block_group_content.search_facet_header
+  module:
+    - facets
+    - request_data_conditions
+    - blockgroup
+  theme:
+    - fsu_subtheme
+id: fsu_subtheme_genre_2
+theme: fsu_subtheme
+region: search_facet_header
+weight: 0
+provider: null
+plugin: 'facet_block:genre_grid'
+settings:
+  id: 'facet_block:genre_grid'
+  label: Genre
+  provider: facets
+  label_display: visible
+  block_id: genre_2
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

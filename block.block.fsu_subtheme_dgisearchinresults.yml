@@ -1,0 +1,52 @@
+uuid: 92f8d477-bc40-4d03-aa13-65097384b031
+langcode: en
+status: true
+dependencies:
+  module:
+    - dgi_i8_custom_blocks
+    - request_data_conditions
+    - blockgroup
+  theme:
+    - fsu_subtheme
+  config:
+    - blockgroup.block_group_content.search_facet_header
+id: fsu_subtheme_dgisearchinresults
+theme: fsu_subtheme
+region: search_facet_header
+weight: 0
+provider: null
+plugin: dgi_search_in_results
+settings:
+  id: dgi_search_in_results
+  label: 'DGI Search in Results'
+  provider: dgi_i8_custom_blocks
+  label_display: '0'
+  search:
+    view: solr_search_content
+    display_id: page_1
+    parameter: search_api_fulltext_1
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

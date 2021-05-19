@@ -1,0 +1,22 @@
+uuid: a480d20d-c54e-427e-a648-423763cbd862
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - fsu_subtheme
+_core:
+  default_config_hash: qoUfzBmYbbC9mVSNDhqod7XEh3LKx5iTwKEoxKNGy9c
+id: fsu_subtheme_messages
+theme: fsu_subtheme
+region: content
+weight: -26
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

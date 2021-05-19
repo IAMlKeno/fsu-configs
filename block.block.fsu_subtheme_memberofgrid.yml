@@ -1,0 +1,25 @@
+uuid: 5a698f4b-7aa5-4739-b74f-bac6504db7a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.member_of_grid_
+    - blockgroup.block_group_content.search_facet_header
+  module:
+    - facets
+    - blockgroup
+  theme:
+    - fsu_subtheme
+id: fsu_subtheme_memberofgrid
+theme: fsu_subtheme
+region: search_facet_header
+weight: -12
+provider: null
+plugin: 'facet_block:member_of_grid_'
+settings:
+  id: 'facet_block:member_of_grid_'
+  label: 'Member of'
+  provider: facets
+  label_display: '0'
+  block_id: memberofgrid
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 0966d2ab-5c6b-4713-a8f9-b5aae4e51091
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.model
+    - blockgroup.block_group_content.search_facet_header
+  module:
+    - facets
+    - blockgroup
+  theme:
+    - fsu_subtheme
+id: fsu_subtheme_model_2
+theme: fsu_subtheme
+region: search_facet_header
+weight: -10
+provider: null
+plugin: 'facet_block:model'
+settings:
+  id: 'facet_block:model'
+  label: Model
+  provider: facets
+  label_display: '0'
+  block_id: model_2
+visibility: {  }

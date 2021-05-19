@@ -1,0 +1,53 @@
+uuid: 453ae395-6343-4965-88e1-102025d714a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets_summary.facets_summary.list_results_facet_summary
+    - blockgroup.block_group_content.search_facet_header
+  module:
+    - block_class
+    - facets_summary
+    - request_data_conditions
+    - blockgroup
+  theme:
+    - fsu_subtheme
+third_party_settings:
+  block_class:
+    classes: dgi-facet-summary-block
+id: fsu_subtheme_listresultsfacetsummary
+theme: fsu_subtheme
+region: search_facet_header
+weight: 0
+provider: null
+plugin: 'facets_summary_block:list_results_facet_summary'
+settings:
+  id: 'facets_summary_block:list_results_facet_summary'
+  label: 'List Results Facet Summary'
+  provider: facets_summary
+  label_display: visible
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

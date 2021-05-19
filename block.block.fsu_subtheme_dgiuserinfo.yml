@@ -1,0 +1,55 @@
+uuid: 20f056fe-6c28-4855-9733-0cfa1fc187d0
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - dgi_header
+    - request_data_conditions
+  theme:
+    - fsu_subtheme
+third_party_settings:
+  block_class:
+    classes: 'hidden-md hidden-lg hidden-sm'
+id: fsu_subtheme_dgiuserinfo
+theme: fsu_subtheme
+region: navigation_collapsible
+weight: -21
+provider: null
+plugin: dgi_user_info
+settings:
+  id: dgi_user_info
+  label: 'DGI User Info'
+  provider: dgi_header
+  label_display: '0'
+  menu: dgi-header
+  search:
+    view: null
+    display_id: null
+    parameter: null
+  second_logo: null
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

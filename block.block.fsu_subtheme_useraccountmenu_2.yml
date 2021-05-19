@@ -1,0 +1,54 @@
+uuid: 578ee707-2139-4de4-b114-45e709adf9c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - block_class
+    - request_data_conditions
+    - system
+  theme:
+    - fsu_subtheme
+third_party_settings:
+  block_class:
+    classes: 'hidden-md hidden-lg hidden-sm'
+id: fsu_subtheme_useraccountmenu_2
+theme: fsu_subtheme
+region: navigation_collapsible
+weight: -19
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

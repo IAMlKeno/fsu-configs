@@ -1,0 +1,27 @@
+uuid: 3e1a00a3-dfd1-4137-8d9e-8817a53044a8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - fsu_subtheme
+_core:
+  default_config_hash: 5el0pvO6r0xKjseMWvYZUnp_hfDq_-g8SiW7gJFaUgc
+id: fsu_subtheme_page_title
+theme: fsu_subtheme
+region: content
+weight: -33
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/*\r\n/user/*\r\n<front>\r\n/solr-search/*"
+    negate: true
+    context_mapping: {  }

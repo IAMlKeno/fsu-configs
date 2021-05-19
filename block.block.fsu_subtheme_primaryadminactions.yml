@@ -1,0 +1,18 @@
+uuid: 635a42df-3c31-4795-88f7-a3b2145e0e28
+langcode: en
+status: true
+dependencies:
+  theme:
+    - fsu_subtheme
+id: fsu_subtheme_primaryadminactions
+theme: fsu_subtheme
+region: help
+weight: -7
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

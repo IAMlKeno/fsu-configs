@@ -1,0 +1,48 @@
+uuid: 8e170b5c-0ed8-4d03-8ed0-8c65de019a14
+langcode: en
+status: true
+dependencies:
+  module:
+    - dgi_i8_custom_blocks
+    - request_data_conditions
+    - blockgroup
+  theme:
+    - fsu_subtheme
+  config:
+    - blockgroup.block_group_content.basic_footer_logo_section
+id: fsu_subtheme_footerlogo
+theme: fsu_subtheme
+region: basic_footer_logo_section
+weight: 0
+provider: null
+plugin: dgi_footer_logo_block
+settings:
+  id: dgi_footer_logo_block
+  label: 'Footer Logo'
+  provider: dgi_i8_custom_blocks
+  label_display: '0'
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

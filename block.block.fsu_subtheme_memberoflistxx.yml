@@ -1,0 +1,50 @@
+uuid: 55293dff-a07a-4ed0-bd54-d9222f70a7ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.member_of_list
+    - blockgroup.block_group_content.collection_facets_list
+  module:
+    - facets
+    - request_data_conditions
+    - blockgroup
+  theme:
+    - fsu_subtheme
+id: fsu_subtheme_memberoflistxx
+theme: fsu_subtheme
+region: collection_facets_list
+weight: -19
+provider: null
+plugin: 'facet_block:member_of_list'
+settings:
+  id: 'facet_block:member_of_list'
+  label: 'Member of list'
+  provider: facets
+  label_display: '0'
+  block_id: memberoflistxx
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

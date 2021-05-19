@@ -1,0 +1,56 @@
+uuid: 35909e19-b99b-4feb-bac0-72bdbf94bdce
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.geographic_subject_collection_list
+    - blockgroup.block_group_content.collection_facets_list
+  module:
+    - dgi_actions
+    - facets
+    - request_data_conditions
+    - blockgroup
+  theme:
+    - fsu_subtheme
+id: geographicsubjectcollectionlist
+theme: fsu_subtheme
+region: collection_facets_list
+weight: 0
+provider: null
+plugin: 'facet_block:geographic_subject_collection_list'
+settings:
+  id: 'facet_block:geographic_subject_collection_list'
+  label: 'Geographic Subject (Collection List)'
+  provider: facets
+  label_display: '0'
+  block_id: geographicsubjectcollectionlist
+visibility:
+  dgi_actions_entity_persistent_identifier_populated:
+    id: dgi_actions_entity_persistent_identifier_populated
+    identifier: ''
+    negate: false
+    context_mapping: {  }
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }

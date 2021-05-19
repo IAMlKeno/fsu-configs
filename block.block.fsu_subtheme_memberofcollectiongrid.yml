@@ -1,0 +1,50 @@
+uuid: b1edf9b2-dcb1-4f94-8b03-b8c167c340a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.member_of_collection_grid
+    - blockgroup.block_group_content.search_facet_header
+  module:
+    - facets
+    - request_data_conditions
+    - blockgroup
+  theme:
+    - fsu_subtheme
+id: fsu_subtheme_memberofcollectiongrid
+theme: fsu_subtheme
+region: search_facet_header
+weight: -14
+provider: null
+plugin: 'facet_block:member_of_collection_grid'
+settings:
+  id: 'facet_block:member_of_collection_grid'
+  label: 'Member of collection grid'
+  provider: facets
+  label_display: '0'
+  block_id: memberofcollectiongrid
+visibility:
+  http_headers:
+    id: http_headers
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  session_values:
+    id: session_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  cookie_values:
+    id: cookie_values
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
+  url_query_parameters:
+    id: url_query_parameters
+    conditions: {  }
+    require_all_params: 1
+    negate: false
+    context_mapping: {  }
